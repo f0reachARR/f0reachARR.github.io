@@ -8,8 +8,9 @@ after_success:
 deploy:
   provider: pages
   skip-cleanup: true
+  target-branch: master
   github-token:
     secure: "pJL4M06o4ahuXQFRCtHQn+IMNH2AvPYKeNISHCu879STDjIItI4N9QgTz+pCqnMvDWFpthgqZhdO40wvzxcefKsfILbBKvPixML44lD0foBqZnwLOxPdymWSeL6uB+eHuWcQTCpq1VybOkzXQ/5UayhU5H01Ek9E2NxKehU3v3zvM3boIm241vrHbU7+OuuTW+p57BW7O2E/ZY7G9dFvj2tq8T+qcTHquK4/ChNiL76r+1D8tO2y3hgkEvFeJag3ld/rKkOTbgnp76dKy672z2FRiytdrGfPK5WHRTEPVazdzdVeWPCdB2PGjIuXozPTA/bw1n5XS2JMsRSypOpwee1KsATRffqGZ/dgzHqEAt/l+n7mUvp37xdnF5dz+acH1m3v+uA6Lb+MmwsWdB5rX7jc8AYBsZlxIPzP4OcZeUfH8r0Gh2lcrK4+//000lxuclnvJYTBpXdkJhzu0mXJt+Q4jQWRepbxFH2e/3AiUtpKE2JeK0INH9YE5HNKluVNfwkiJWQUKBK2GvREFM+B5a6+kbQ10gJnUz25lxRo6UAHXk8GWEk9Uz7qatf4e5qsUKUMRo2s2uo4FbF5xIOWgjRkzM8+cSY81PjA//RA98rS18ULULpjVZW2dvIc34NAb9kMBi54xxBExw6TsnTygqFVoEVWMOBOyHIbtMrHBwM="
-  keep-history: true
+  keep-history: false
   on:
-    branch: master
+    branch: content
