@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "node_modules/.bin/pug index.pug && node_modules/.bin/stylus index.styl"
+    "build": "pug index.pug && stylus index.styl"
   },
   "dependencies": {
     "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
     "stylus": "^0.54.5"
   }
 }
