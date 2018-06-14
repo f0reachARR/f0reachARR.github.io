@@ -4,7 +4,7 @@ node_js:
 script: npm run build
 after_success:
   - rm -rf node_modules/
-  - rm *.styl *.pug
+  - rm *.styl *.pug *.json .gitignore .travis.yml
 deploy:
   provider: pages
   skip-cleanup: true
