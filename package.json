@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "UNLICENSED",
   "scripts": {
-    "build": "pug index.pug && stylus index.styl"
+    "build": "node_modules/.bin/pug index.pug && node_modules/.bin/stylus index.styl"
   },
   "dependencies": {
     "pug": "^2.0.3",
