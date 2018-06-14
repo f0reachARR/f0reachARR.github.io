@@ -1,0 +1,162 @@
+white-color = rgba(255, 255, 255, 0.99)
+body
+  margin 0
+  background rgba(0, 0, 0, .6)
+  text-align center
+  color: white-color
+
+.icon
+  height 196px
+  width 196px
+  margin 40px 0
+  border 6px rgba(0, 0, 0, .4) solid
+  box-sizing border-box
+  border-radius: 100px
+  background-image url(/icon.png)
+  background-position center
+  background-size 196px
+  background-repeat no-repeat
+  display: block
+
+.profile
+  display flex
+  align-items center
+  flex-direction column
+  h1
+    font-size 3.2em
+    margin 8px 0 0 0
+  h2
+    margin 1px
+    font-size 1.8em
+    font-family Questrial
+    font-weight normal
+  p
+    margin .2em
+    font-size 1.2em
+    font-family Catamaran
+
+a
+  color white-color
+  &:hover
+    color rgba(255, 255, 255, .85)
+.link
+  font-size 4.5em
+  width 350px
+  border-top 1px solid white-color
+  padding-top 16px
+  a
+    padding 0 8px
+    color rgba(255, 255, 255, .87)
+    text-decoration none
+    transition color .15s linear
+    i
+      transition transform .2s ease-in
+      transform scale(1)
+    &:hover
+      color white-color
+      i
+        transform scale(1.3)
+
+.link-2
+  font-size 1.3em
+  a
+    padding 0 10px
+    text-decoration underline
+    font-family Questrial
+
+@keyframes fade
+  0%
+    background-color rgba(0, 0, 0, 0);
+    opacity 0
+  100%
+    background-color rgba(0, 0, 0, .4);
+    opacity 1
+
+@keyframes modal-in
+  0%
+    transform scale(.1)
+  80%
+    transform scale(1.1)
+  100%
+    transform scale(1)
+
+#send-email.hide
+  display none
+
+#send-email
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background-color rgba(0, 0, 0, .4);
+  animation fade .2s ease-in
+  display flex
+  justify-content center
+  align-items flex-start
+  padding 15px 0
+
+  &.hide
+    background-color rgba(0, 0, 0, 0);
+
+  .body
+    background-color rgba(0, 0, 0, .7)
+    border .5px solid rgba(255, 255, 255, .1)
+    min-width 100px
+    width 400px
+    min-height 300px
+    padding 12px
+    overflow hidden
+    animation modal-in .3s ease-in
+
+    span
+      font-family Questrial
+      font-size 24px
+      &.title
+        border-bottom .3px solid white-color
+      &.status
+        display: none
+        &.success
+          color rgba(114, 255, 126, .7)
+        &.error
+          color rgba(255, 0, 0, 0.8)
+      i
+        vertical-align text-top
+
+button, input, textarea
+  outline none
+  background-color rgba(0, 0, 0, .3)
+  font-size 1.2em
+  color white-color
+  box-sizing border-box
+  width 100%
+  transition background-color .1s ease-in, color .1s ease-in;
+  &:focus
+    background-color rgba(255, 255, 255, .05)
+
+button
+  font-family Questrial
+  font-size 24px
+  padding 4px
+  border .8px solid rgba(255, 255, 255, .2)
+  margin-top 8px
+  transition border .3s ease-in
+  i
+    vertical-align text-top
+  &:disabled
+    color rgba(255, 255, 255, .2)
+  &:hover:not(:disabled)
+    background-color rgba(255, 255, 255, .05)
+    border .8px solid rgba(255, 255, 255, .3)
+
+input, textarea
+  font-family Roboto
+  border 0
+  border-bottom .5px solid rgba(255, 255, 255, .2)
+  margin 8px 0
+  padding 1px 3px
+  display block
+  resize none
+
+textarea
+  min-height 200px

@@ -1,0 +1,78 @@
+doctype html
+
+html(lang="ja")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="X-UA-Compatible" content="IE=edge")
+        meta(name="title" content="マンゴー (f0reachARR)")
+        meta(name="description" content="High school student / Software developer")
+        meta(property="og:description" content="High school student / Software developer")
+        meta(property="og:title" content="マンゴー (f0reachARR)")
+        meta(property="og:image" content="https://f0reach.me/icon.png")
+        meta(property="twitter:title" content="マンゴー (f0reachARR)")
+        meta(property="twitter:description" content="High school student / Software developer")
+        meta(property="twitter:image" content="https://f0reach.me/icon.png")
+        meta(property="twitter:card" content="summary")
+        meta(property="twitter:site" content="@f0reachARR")
+        title マンゴー (f0reachARR)
+        link(rel="stylesheet" href="./index.css")
+        link(href="https://fonts.googleapis.com/css?family=Questrial|Catamaran|Material+Icons|Roboto" rel="stylesheet")
+        link(rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="icon" href="favicon.ico")
+        script(src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+        script(src="//www.google.com/recaptcha/api.js")
+        script(src="/index.js")
+    body
+        .profile
+            .icon
+            h1 マンゴー
+            h2 f0reachARR
+            p High school student / Software developer
+            p Skill: TypeScript, C#, Perl, ...
+            p
+                i.fa.fa-map-marker
+                | &nbsp;Kyoto, Japan
+            .link
+                a(href="https://github.com/f0reachARR/" title="GitHub")
+                    i.fa.fa-github
+                a(href="https://twitter.com/f0reachARR" title="Twitter")
+                    i.fa.fa-twitter
+                a(href="https://blog.f0reach.me" title="Blog")
+                    i.fa.fa-wordpress
+                a#sendmail(href="#" title="Send email")
+                    i.fa.fa-envelope
+            .link-2
+                a(href="http://qiita.com/f0reachARR") Qiita
+                a(href="https://ask.fm/f0reachARR") Ask.fm
+                a(href="bitcoin:144afexwnCkCFhDko74To7xCs9t4SC4pn6") Bitcoin
+        #send-email.hide
+            form.body
+                span.title
+                    i.material-icons email
+                    | Send Email
+                input#from(name="from" placeholder="Name" required)
+                input#email(type="email" name="email" placeholder="Email" required)
+                textarea#message(name="message" placeholder="Message..." required)
+                .g-recaptcha(data-sitekey="6LcM-jAUAAAAAOqo91apNh9dJT-coaE-kUh2SzBS" data-theme="dark" data-callback="reCaptchaOk")
+                button#submit(type="submit" disabled)
+                    i.material-icons send
+                    | Send!
+                span.status.success
+                    i.material-icons done
+                    | Done!
+                span.status.error
+                    i.material-icons error-outline
+                    | Error
+        script
+            | var _paq = _paq || [];
+            | _paq.push(["setCookieDomain", "*.f0reach.me"]);
+            | _paq.push(['trackPageView']);
+            | _paq.push(['enableLinkTracking']);
+            | (function() {
+            | var u="//pk.f0reach.me/";
+            | _paq.push(['setTrackerUrl', u+'t']);
+            | _paq.push(['setSiteId', '3']);
+            | var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            | g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'t.js'; s.parentNode.insertBefore(g,s);
+            | })();

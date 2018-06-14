@@ -1,0 +1,12 @@
+{
+  "name": "f0reacharr.github.io",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "pug index.pug && stylus index.styl"
+  },
+  "dependencies": {
+    "pug": "^2.0.3",
+    "stylus": "^0.54.5"
+  }
+}
