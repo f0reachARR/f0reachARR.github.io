@@ -1,11 +1,10 @@
 language: node_js
 node_js:
   - "node"
-script: npm build
+script: npm run build
 after_success:
   - rm -rf node_modules/
   - rm *.styl *.pug
-  - rm .gitignore .travis.yml
 deploy:
   provider: pages
   local-dir: build/
