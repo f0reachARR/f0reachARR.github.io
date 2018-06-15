@@ -30,8 +30,7 @@ $(function () {
         $('#submit').prop('disabled', true);
         $.ajax({
             type: 'POST',
-            url: '/message',
-            dataType: 'json',
+            url: 'https://us-central1-f0reach-207313.cloudfunctions.net/send-contact',
             data: $(this).serialize()
         }).done(function () {
             $('.status.success').fadeIn(100);
