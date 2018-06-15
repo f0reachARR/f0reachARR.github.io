@@ -1,16 +1,19 @@
 language: node_js
 node_js:
-  - "node"
+- node
 script: npm run build
 after_success:
-  - rm -rf node_modules/
-  - rm *.styl *.pug *.json .gitignore .travis.yml
+- rm -rf node_modules/
+- rm *.styl *.pug *.json .gitignore .travis.yml
 deploy:
   provider: pages
   skip-cleanup: true
   target-branch: master
   github-token:
-    secure: "pJL4M06o4ahuXQFRCtHQn+IMNH2AvPYKeNISHCu879STDjIItI4N9QgTz+pCqnMvDWFpthgqZhdO40wvzxcefKsfILbBKvPixML44lD0foBqZnwLOxPdymWSeL6uB+eHuWcQTCpq1VybOkzXQ/5UayhU5H01Ek9E2NxKehU3v3zvM3boIm241vrHbU7+OuuTW+p57BW7O2E/ZY7G9dFvj2tq8T+qcTHquK4/ChNiL76r+1D8tO2y3hgkEvFeJag3ld/rKkOTbgnp76dKy672z2FRiytdrGfPK5WHRTEPVazdzdVeWPCdB2PGjIuXozPTA/bw1n5XS2JMsRSypOpwee1KsATRffqGZ/dgzHqEAt/l+n7mUvp37xdnF5dz+acH1m3v+uA6Lb+MmwsWdB5rX7jc8AYBsZlxIPzP4OcZeUfH8r0Gh2lcrK4+//000lxuclnvJYTBpXdkJhzu0mXJt+Q4jQWRepbxFH2e/3AiUtpKE2JeK0INH9YE5HNKluVNfwkiJWQUKBK2GvREFM+B5a6+kbQ10gJnUz25lxRo6UAHXk8GWEk9Uz7qatf4e5qsUKUMRo2s2uo4FbF5xIOWgjRkzM8+cSY81PjA//RA98rS18ULULpjVZW2dvIc34NAb9kMBi54xxBExw6TsnTygqFVoEVWMOBOyHIbtMrHBwM="
+    secure: pJL4M06o4ahuXQFRCtHQn+IMNH2AvPYKeNISHCu879STDjIItI4N9QgTz+pCqnMvDWFpthgqZhdO40wvzxcefKsfILbBKvPixML44lD0foBqZnwLOxPdymWSeL6uB+eHuWcQTCpq1VybOkzXQ/5UayhU5H01Ek9E2NxKehU3v3zvM3boIm241vrHbU7+OuuTW+p57BW7O2E/ZY7G9dFvj2tq8T+qcTHquK4/ChNiL76r+1D8tO2y3hgkEvFeJag3ld/rKkOTbgnp76dKy672z2FRiytdrGfPK5WHRTEPVazdzdVeWPCdB2PGjIuXozPTA/bw1n5XS2JMsRSypOpwee1KsATRffqGZ/dgzHqEAt/l+n7mUvp37xdnF5dz+acH1m3v+uA6Lb+MmwsWdB5rX7jc8AYBsZlxIPzP4OcZeUfH8r0Gh2lcrK4+//000lxuclnvJYTBpXdkJhzu0mXJt+Q4jQWRepbxFH2e/3AiUtpKE2JeK0INH9YE5HNKluVNfwkiJWQUKBK2GvREFM+B5a6+kbQ10gJnUz25lxRo6UAHXk8GWEk9Uz7qatf4e5qsUKUMRo2s2uo4FbF5xIOWgjRkzM8+cSY81PjA//RA98rS18ULULpjVZW2dvIc34NAb9kMBi54xxBExw6TsnTygqFVoEVWMOBOyHIbtMrHBwM=
   keep-history: false
   on:
     branch: content
+notifications:
+  slack:
+    secure: Z+qmIr0hkh1WcVxy60WIaFp2TcSO7KJxHNK8cvILXNZOjuGRQMQOfaFzjCdIQuwexruTADmL6M424DU5N+rPTUWNp8CzRXdiatv2GwQqA1ZHMelKYOWvY/RPQ+1nAJuMIhCijGaFMlpogp75YxvScmfbt+Z77R9qwvPT7ma8RwHA/rfg4KxgE1e521jxGWYz4ri/W0R0swoHSgBTv+DZs8wyKzxQVwKQojVFhB5IYTZkkaEoHpZtIujGHQnIqjOGpG7RoRDcuOiAriuYu3b27RmDLf2IaCCEetipQx4FGiCrsIA4pkFc2xd10lHxbvvFao27gEqsp+Y5rXMsUOru2GCj71RiAnlYSbh+qyFNDGLl2mf1CgtO4hZHgkdRT1cVvfWiIrc2qR5Oye0Gq2AD7gvh0QBIeoIHmb4eQNzIH3s6zXGOXmHvd454bY0OgvPImcoOaJ/cA48BxrJwhcCrkC8rB20O5bw4o7qCjDj3K2BelVdXQF2m5cWXR+UgDPbx8CcGKgxOe+JwdAn8sx4d+ewxiW6NE/zrMj+njDSgybTIdbMmZhT0Sdem4a2aGjvJLrX3l3TJ4eyxze7UEX+z6y2s8wDr+FtUbgDg4yGc9+CwYH61a7sFggQtZgHEPd6xWQBHnRXLyr+oUivOpVahh1LKTZKzepBvGezy8SRcBjI=
