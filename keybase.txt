@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/f0reach
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://f0reach.me
+  * I am f0reach (https://keybase.io/f0reach) on keybase.
+  * I have a public key ASBKV1FU14bmwqA3e11-Dsq2zp3-6A5ZtEFHrNUSrQtj7go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204a575154d786e6c2a0377b5d7e0ecab6ce9dfee80e59b44147acd512ad0b63ee0a",
+      "host": "keybase.io",
+      "kid": "01204a575154d786e6c2a0377b5d7e0ecab6ce9dfee80e59b44147acd512ad0b63ee0a",
+      "uid": "5dcf9e7d285bb07a3da276c75ce82319",
+      "username": "f0reach"
+    },
+    "merkle_root": {
+      "ctime": 1561726879,
+      "hash": "3848c7490ad03d7707860f0af7b1228b9dbd36e895c404afc124b7bab9850631931cb485e2a35437e8a172caa8fbdb070ed29460530bbf41d58f80a69d87d502",
+      "hash_meta": "917f6a3dbdeefb66795070682f75c39b554d65ead47ca7c2fabfa681563bf89c",
+      "seqno": 5656468
+    },
+    "service": {
+      "entropy": "b7QvVZjYp4gw56Nh1mkjZeSa",
+      "hostname": "f0reach.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.1.0"
+  },
+  "ctime": 1561726948,
+  "expire_in": 504576000,
+  "prev": "c78a3d8ebb5b4c1a655ad30855aa67ca308c98ca355a5e64710a5247391f177f",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgSldRVNeG5sKgN3tdfg7Kts6d/ugOWbRBR6zVEq0LY+4Kp3BheWxvYWTESpcCBsQgx4o9jrtbTBplWtMIVapnyjCMmMo1Wl5kcQpSRzkfF3/EIHbFixBQF9FVhw4rjvmCRYTdbj6GkUEFgdeZF1lNx18HAgHCo3NpZ8RApRkR+SrKL3D5d8/IpluKvMqQ/Timvc1iBFeGWhf5CDfjpEym7OEkmlvJGrziUEB/Dij7YyHhOq1K3rN6tNk6B6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEPyg6oQp5XtoT+hYxE9vLtXuITwZZdfiwI5syS0Io8Co3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/f0reach
+
+==================================================================
